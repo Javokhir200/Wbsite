@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        /* Main section styles */
+        .main-section {
+            margin: 20px;
+        }
+
+        .form-container {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<!-- Main section -->
+<div class="main-section">
+    <!-- Form to add a book -->
+    <div class="form-container">
+        <h2>Add Book</h2>
+        <form action="/book/add" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br><br>
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre">
+                <option>Drama</option>
+                <option>Crime</option>
+                <option>Roman</option>
+                <option>Text</option>
+            </select><br><br>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+
+    <div class="books-table">
+        <h2>Books</h2>
+        <table>
+            <thead>
+            <tr>
+                <td>#</td>
+                <td>Name</td>
+                <td>Author</td>
+                <td>Genre</td>
+                <td>Update</td>
+                <td>Delete</td>
+            </tr>
+            </thead>
+            <th:block th:each="book, stat:${books}">
+                <tbody>
+                <tr>
+                    <td th:text="|${stat.count}|"></td>
+                    <td th:text="|${book.name}|"></td>
+                    <td th:text="|${book.author}|"></td>
+                    <td th:text="|${book.genre}|"></td>
+                    <td>
+                        <a th:href="@{/book/update/{id}(id=${book.id})}">✏️</a>
+                    </td>
+                    <td>
+                        <a th:href="@{/book/delete/{id}(id=${book.id})}">🗑</a>
+                    </td>
+                </tr>
+                </tbody>
+            </th:block>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Wbsite:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Wbsite_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Wbsite" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:6.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:6.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:6.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:6.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:6.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:6.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:6.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:6.1.6" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:3.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: ognl:ognl:3.3.4" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.29.0-GA" />
+          <element id="library" level="project" name="Maven: org.attoparser:attoparser:2.0.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.7" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:6.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:6.1.6" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.7.3" />
+          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.42.0" />
+          <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:3.0.0-M1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.17.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.17.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.17.0" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.14.9" />
+          <element id="library" level="project" name="Maven: jakarta.persistence:jakarta.persistence-api:3.2.0-M2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:6.2.4" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:6.2.4" />
+          <element id="library" level="project" name="Maven: io.micrometer:micrometer-observation:1.12.5" />
+          <element id="library" level="project" name="Maven: io.micrometer:micrometer-commons:1.12.5" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:6.2.4" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:6.2.4" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Wbsite/web/Web" />
+    </root>
+  </artifact>
+</component>

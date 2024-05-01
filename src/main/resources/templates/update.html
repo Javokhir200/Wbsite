@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- Main section -->
+<div class="main-section">
+    <!-- Form to add a book -->
+    <div class="form-container">
+        <h2>Update Book</h2>
+        <form th:action="@{/book/update/{id}(id=${bookId})}" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br><br>
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre">
+                <option>Drama</option>
+                <option>Crime</option>
+                <option>Roman</option>
+                <option>Text</option>
+            </select><br><br>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LogOut</title>
+    <link rel="stylesheet" href="./auth-style.css">
+</head>
+<body>
+<div class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<br>
+<br>
+<form action="/logout" method="post">
+    <p>Are sure to logout ?</p>
+    <br>
+    <br>
+    <button type="submit"> YES</button>
+    <br>
+    <br>
+    <a href="/home">NO</a>
+</form>
+</body>
+</html>

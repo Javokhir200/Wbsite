@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="auth-style.css">
+</head>
+<body>
+<div class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+</div>
+<br><br><br>
+<form action="/signup" method="post">
+    <h2>Register</h2>
+    <label>
+        <input type="text" name="firstname" required placeholder="Enter your firstName">
+    </label>
+    <label>
+        <input type="text" name="lastname" required placeholder="Enter your lastName">
+    </label>
+    <label>
+        <input type="email" name="email" required placeholder="Enter your email">
+    </label>
+    <label>
+        <input type="text" name="username" required placeholder="Enter unique username">
+    </label>
+    <label>
+        <input type="password" name="password" required placeholder="Enter valid password">
+    </label>
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>
